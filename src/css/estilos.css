@@ -82,7 +82,6 @@ html {
 
 .cabecalho .navegacao .menu {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .cabecalho .navegacao .menu .item {
@@ -92,6 +91,8 @@ html {
 .cabecalho .navegacao .menu .item a {
   padding: 10px;
   transition: 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cabecalho .navegacao .menu .item a:hover {
