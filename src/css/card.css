@@ -1,0 +1,81 @@
+.title .discover {
+  font-size: 50px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  color: #01b4fe;
+  text-align: center;
+}
+
+.descubra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.container {
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: black;
+  margin: 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container .card img {
+  transition: 0.5s;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.container .card h1 {
+  font-size: 2rem;
+  color: #01b4fe;
+}
+
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .content p {
+  transition: 0.5s;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #01b4fe;
+  color: #fff;
+  border-radius: 14rem;
+  text-decoration: none;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+.container .card:hover h1 {
+  color: #fff;
+}
+
+.container .card:hover a {
+  background-color: #fff;
+  color: #01b4fe;
+}
+.container .card:hover {
+  background-color: #01b4fe;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #fff;
+}

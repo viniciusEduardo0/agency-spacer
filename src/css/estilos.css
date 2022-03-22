@@ -1,0 +1,290 @@
+/* importado pelo google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Public+Sans:wght@300;400;800&display=swap');
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: black;
+}
+
+/* reset para remover todos os estilos do navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* deixando o tamanho da imagem pré-definido */
+img {
+  max-width: 100%;
+}
+
+/* removendo os estilos de texto */
+a {
+  text-decoration: none;
+}
+
+/* removendo estilos da lista */
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*------------Estilização do cabeçalho página --------------*/
+
+.logo .imagem {
+  width: 100px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 414px) {
+  .cabecalho {
+    justify-content: space-between;
+  }
+
+  .cabecalho .logo {
+    margin-bottom: 25px;
+  }
+
+  .cabecalho .menu .item a {
+    font-size: calc(0.6em +1vw);
+    font-size: 0.6rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo .titulo {
+  margin-left: 2px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.logo .titulo .space {
+  color: #01b4fe;
+}
+
+.cabecalho .navegacao .menu {
+  display: flex;
+}
+
+.cabecalho .navegacao .menu .item {
+  margin: 15px;
+}
+
+.cabecalho .navegacao .menu .item a {
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.cabecalho .navegacao .menu .item a:hover {
+  color: #01b4fe;
+  background-color: #ffffff;
+  border-radius: 14rem;
+}
+
+/* ---------------- Estilizando o painel de "nossos projetos"  -------- */
+
+.conteudo-principal .paineis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .conteudo-principal .paineis {
+    height: 500px;
+  }
+}
+
+.conteudo-principal .paineis .imagem-painel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(88%);
+
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .projeto1 {
+  background-image: url('../imagens/helmet-clean.png');
+}
+
+.conteudo-principal .paineis .projeto2 {
+  background-image: url('../imagens/space.jpg');
+}
+
+.conteudo-principal .paineis .projeto3 {
+  background-image: url('../imagens/helmet-holder2.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+  opacity: 1;
+}
+
+.conteudo-principal .paineis .titulo {
+  text-transform: uppercase;
+  font-size: calc(1em + 1vw);
+}
+
+.conteudo-principal .paineis .seta {
+  background-image: url('../imagens/seta.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+  left: 20px;
+  transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+  right: 20px;
+}
+
+/* ---------------- QUEM SOMOS ------------------- */
+
+.quem-somos .conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+}
+
+.quem-somos .conteudo .informacoes {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.quem-somos .conteudo .imagem1 {
+  width: 40%;
+  border-radius: 100%;
+}
+
+.quem-somos .conteudo .informacoes .titulo {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #01b4fe;
+}
+
+.quem-somos .conteudo .informacoes .texto {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@media (max-width: 1109px) {
+  .quem-somos .conteudo {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+  }
+  .quem-somos .conteudo .imagem1 {
+    display: none;
+  }
+
+  .quem-somos .conteudo .informacoes {
+    width: 100%;
+  }
+}
+
+/* ----------------------Footer --------------------------*/
+
+/* padding sentido horário cima direita, baixo, esq */
+.rodape {
+  padding: 80px 0 20px 0;
+}
+
+.rodape .line {
+  margin-top: -12px;
+}
+
+.rodape .navegacao {
+  max-width: 1170px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape .redes-sociais {
+  display: flex;
+}
+
+.rodape .redes-sociais a {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  width: 65px;
+  transition: 0.3s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover {
+  background-color: #fff;
+}
+
+.rodape .redes-sociais i {
+  transition: 0.9s ease-in-out;
+}
+
+.rodape .redes-sociais:hover i {
+  color: #01b4fe;
+}
+
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.copy {
+  color: #01b4fe;
+}
+
+@media (max-width: 940px) {
+  .rodape .navegacao {
+    justify-content: center;
+  }
+
+  .rodape .navegacao .logo {
+    margin-bottom: 25px;
+  }
+
+  .rodape .navegacao .logo,
+  .rodape .navegacao .redes-sociais {
+    width: 100%;
+    justify-content: center;
+  }
+}

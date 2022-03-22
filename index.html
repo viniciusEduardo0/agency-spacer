@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Somos uma agência apaixonada por programação"
+    />
+
+    <title>Agência SPACER</title>
+    <link
+      rel="shortcut icon"
+      href="src/imagens/mundo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/css/estilos.css" />
+    <link rel="stylesheet" href="src/css/card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#" class="logo">
+        <img
+          src="src/imagens/spacer-icon-left.png"
+          alt="foto do astronauta"
+          class="imagem"
+        />
+        <span class="titulo">Agência <span class="space">SPACER</span> </span>
+      </a>
+
+      <nav class="navegacao">
+        <ul class="menu">
+          <li class="item">
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li class="item">
+            <a href="#quem-somos">Quem Somos</a>
+          </li>
+          <li class="item">
+            <a href="#descubra">Descubra</a>
+          </li>
+          <li class="item">
+            <a href="#contatos">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------ Separando a NAV do MAIN  -------->
+
+    <main class="conteudo-principal" id="projetos">
+      <!-- Section do painel com carrosel de imagens -->
+      <section class="paineis">
+        <h1 class="titulo">Nossos Projetos</h1>
+
+        <div class="imagem-painel projeto1 mostrar"></div>
+        <div class="imagem-painel projeto2"></div>
+        <div class="imagem-painel projeto3"></div>
+
+        <a href="#" id="btn-voltar" class="seta btn-voltar">voltar</a>
+        <a href="#" id="btn-avancar" class="seta btn-avancar">avancar</a>
+      </section>
+
+      <!-- Separando o carrossel da parte de quem somos -->
+      <section class="quem-somos" id="quem-somos">
+        <div class="conteudo">
+          <div class="informacoes">
+            <h2 class="titulo">Quem Somos</h2>
+
+            <p class="texto">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+              voluptates perspiciatis ullam laboriosam dolor consequuntur culpa!
+              Mollitia quo dolorum minus consectetur alias, est voluptatum
+              corrupti, numquam quidem quod animi neque! Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Beatae cupiditate quam
+              excepturi odio libero, sapiente enim accusantium suscipit hic,
+              nisi modi facilis. Quod, cumque! Exercitationem, consequuntur!
+              Distinctio quae optio ullam! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Rem sapiente consequuntur fugiat
+              asperiores sed quidem inventore laborum quia, quisquam minus,
+              magni aspernatur vero omnis ipsum similique id incidunt, unde
+              ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae sequi tempore aspernatur reprehenderit expedita nulla
+              amet in iure accusantium, laboriosam quaerat omnis, molestias
+              aperiam.
+            </p>
+          </div>
+
+          <img
+            src="./src/imagens/hyper-space.png"
+            class="imagem1"
+            alt="space guy"
+          />
+        </div>
+      </section>
+
+      <!-------------------- cards ---------------------->
+
+      <section class="title">
+        <h2 class="discover" id="descubra">Um Novo Mundo!!!</h2>
+      </section>
+      <section class="descubra">
+        <div class="container">
+          <!-- card 1 -->
+          <div class="card">
+            <div class="img">
+              <img src="src/imagens/planet.png" alt="" />
+            </div>
+            <h1>Aprenda</h1>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                commodi consequatur earum autem mollitia nisi? Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Sapiente dolores at
+                facere exercitationem ex, quo deleniti delectus dolore qui est
+                praesentium atque unde eius itaque sequi reprehenderit minima ut
+                non.
+              </p>
+              <a href="#">Leia Mais</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="card">
+            <div class="img">
+              <img src="src/imagens/woman.png" alt="" />
+            </div>
+            <h1>Evolua</h1>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                commodi consequatur earum autem mollitia nisi? Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Sapiente dolores at
+                facere exercitationem ex, quo deleniti delectus dolore qui est
+                praesentium atque unde eius itaque sequi reprehenderit minima ut
+                non.
+              </p>
+              <a href="#">Leia Mais</a>
+            </div>
+          </div>
+
+          <!-- card 3  -->
+
+          <div class="card">
+            <div class="img">
+              <img src="src/imagens/rocket.png" alt="" />
+            </div>
+            <h1>Viaje</h1>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                commodi consequatur earum autem mollitia nisi? Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Sapiente dolores at
+                facere exercitationem ex, quo deleniti delectus dolore qui est
+                praesentium atque unde eius itaque sequi reprehenderit minima ut
+                non.
+              </p>
+              <a href="#">Leia Mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!----------------------------------- Footer ------------------------------------------>
+    <footer class="rodape" id="contatos">
+      <hr class="line" />
+      <nav class="navegacao">
+        <a href="#" class="logo">
+          <img
+            src="/src/imagens/spacer-icon-left.png"
+            alt="Logo SPACER"
+            class="imagem"
+          />
+          <span class="titulo">Agência <span class="space">SPACER</span></span>
+        </a>
+
+        <div class="redes-sociais">
+          <a
+            href="https://www.linkedin.com/in/vin%C3%ADcius-eduardo-39b48a220/"
+            target="_blank"
+            class="rede-social"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:viniciuseduardo334@gmail.com" class="rede-social">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/vini_edu0/"
+            target="_blank"
+            class="rede-social"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+
+      <p class="copyright">
+        Todos os direitos reservados <span class="copy">&copy;</span>
+      </p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/a4b3fe64dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="src/js/painel.js"></script>
+  </body>
+</html>
