@@ -82,6 +82,7 @@ html {
 
 .cabecalho .navegacao .menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cabecalho .navegacao .menu .item {
