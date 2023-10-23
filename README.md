@@ -4,9 +4,12 @@
 
 ## Descrição
 
-<p> Página simples criada após curso feito na <a  href="https://web.dio.me/browse"> DIO </a> utilizando alguns estilos e modificações próprias, testando alguns conhecimentos.</p>
+<p>Landing page simples criada após curso feito na <a  href="https://web.dio.me/browse"> DIO </a> utilizando alguns estilos e modificações próprias, testando alguns conhecimentos.</p>
 
 ## Linguagens Utilizadas
 - HTML
 - CSS
 - JavaScript
+
+## Layout
+<img src="src/imagens/Agency_desk.PNG">
